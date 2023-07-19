@@ -1,0 +1,267 @@
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgb(0,0,0,0.7) ,rgb(0,0,0,1)) , url(image/html-css-collage-concept\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    text-align: center;
+    height: 59px;
+    margin: 10px 0px;
+}
+.header li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.header li img{
+       width: 75px;
+       height: 75px;
+}
+.header li a {
+    text-decoration: none;
+    color: aliceblue;
+    width: 100px;
+    margin: 0 49px;
+    transition-duration: 2s;
+}
+.header li a:hover{
+    color: #10dbbf;
+    border-bottom: 2px solid #23d6b0;
+}
+.contener main{
+    width: 95%;
+    transform: translate(10px, 22%);
+    display: flex;
+
+}
+.div-1{
+    width: 50%;
+}
+.header-main{
+    font-size: 30px;
+    color: #9d810b;
+}
+main p {
+    padding: 5px 20px;
+    color: #b5c7cb;
+}
+main p b {
+    color: #23d6b0;
+}
+main img{
+    width: 200px;
+    border-radius: 50%;
+    transition-duration: 1s;
+    position: relative;
+    left: 49px;
+}
+.main-img:hover{
+    transform: scale(1.2);
+}
+.animblob:hover{
+    transform: scale(1.1);
+}
+.image-container{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.imgbox{
+    position: relative;
+    min-width: calc(50vh-90px) ;
+    margin-right: 10vw;
+    z-index: 1;
+}
+.animblob{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 16vw;
+    transform: translate(-50%,-50%);
+    background-color: #23d6b0;
+    animation: anim-blob 8s linear infinite ;
+}
+@keyframes anim-blob {
+    0%,100%{
+        border-radius: 45% 55% 70% 35% / 70% 30% 90% 40%;
+    }
+    25%{
+        border-radius: 55% 45% 30% 35% / 50% 30% 60% 10%;
+    }
+    50%{
+        border-radius: 65% 35% 35% 65% / 40% 60% 30% 70%;
+    }
+    75%{
+        border-radius: 35% 65% 60% 40% / 70% 30% 40% 60%;
+    }
+
+    
+}
+@media (min-width: 900px ) and ( max-width:1100px){
+    .animblob{
+        width: 20vw;
+    }
+}
+@media (min-width: 750px ) and ( max-width:899px){
+    .animblob{
+        width: 23vw;
+        height: 289px;
+        left: 59%;
+    }
+    main img{
+        width: 190px;
+        position: relative;
+        left: 27%;
+    }
+    .imgbox{
+        left: 20px;
+
+    }
+}
+@media (min-width: 600px ) and ( max-width:749px){
+    .animblob{
+        width: 20vw;
+        height: 41vh;
+        left: 53%;
+    }
+    main img{
+        width: 170px;
+        position: relative;
+        left: 13%;
+    }
+    .imgbox{
+        left: 20px;
+
+    }
+    main p {
+        padding: 3px 15px;
+        font-size: 14px;
+    }
+    .header li img {
+        width: 60px;
+        height: 62px;
+    }
+    .header li a {
+        font-size: 14px;}
+}
+@media (min-width: 550px ) and ( max-width:599px){
+    .animblob{
+        width: 20vw;
+        height: 40vh;
+        left: 60%;
+    }
+    main img{
+        width: 158px;
+        position: relative;
+        left: 17%;
+    }
+    .imgbox{
+        left: 20px;
+
+    }
+    main p {
+        padding: 3px 15px;
+        font-size: 14px;
+    }
+    .header li img {
+        width: 60px;
+        height: 62px;
+    }
+    .header li a {
+        font-size: 12px;}
+        .div-1 {
+            width: 69%;
+        }
+}
+@media (min-width: 450px ) and ( max-width:549px){
+    .animblob{
+        width: 20vw;
+        height: 35vh;
+        left: 60%;
+    }
+    
+    main img{
+        width: 154px;
+        position: relative;
+        left: 18%;
+        height: 225px;
+    }
+    .imgbox{
+        left: 20px;
+
+    }
+    main p {
+        padding: 2px 0px 2px 15px;
+        font-size: 11px;
+    }
+    .header li img {
+        width: 60px;
+        height: 62px;
+    }
+    .header li a {
+        font-size: 12px;
+        width: 59px;
+        margin: 0 40px
+    }
+     .div-1 {
+        width: 69%;
+     }
+     .header-main{
+        font-size: 20px;
+    }
+}
+@media (min-width: 350px ) and ( max-width:449px){
+    .animblob{
+        width: 20vw;
+        height: 177px;
+        left: 43%;
+    }
+    
+    main img{
+        width: 124px;
+        position: relative;
+        left: -10%;
+        height: 174px;
+    }
+    .imgbox{
+        left: 20px;
+
+    }
+    main p {
+        padding: 2px 0px 2px 4px;
+        font-size: 8px;
+    }
+    .header li img {
+        width: 40px;
+        height: 48px;
+    }
+    .header{
+        padding: 12px;
+    }
+    .header li a {
+        font-size: 12px;
+        width: 59px;
+        margin: 0 30px
+    }
+     .div-1 {
+        width: 69%;
+     }
+     .header-main{
+        font-size: 20px;
+    }
+    ul {
+        padding-left: 0px;
+    }
+}
